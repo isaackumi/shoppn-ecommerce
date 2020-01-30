@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+      <!-- BootStrap Link -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <!-- Custom Stylesheet -->
+      <link rel="stylesheet" href="http://localhost/shoppn/css/style.css">
+      <link rel="stylesheet" href="http://localhost/shoppn/css/register.css">
+      <!-- Fontawesome Link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+      <title>Flames - Admin</title>
+
+</head>
+<body>
+
+    <!-- Main Body of Log Page -->
+    <div class="admin-bck">
+    <div class="container">
+        <div class="row"> <!-- Row Con-->
+            <div class="col-lg col-md "> <!-- Column Con-->
+                <div id="login-box" class="shadow-lg p-3 mb-5 bg-white rounded">
+                    <div class="header">
+                            <h1 id="company-logo">Flames<span><i class="fas fa-fire-alt"></i></span></h1>
+                            <p>Admin Portal</p>
+                            <p id="security-message">It takes two to find a dozen keys <span><i class="fas fa-key"></i></span></p> 
+                    </div>
+                    <div class="log-body"> <!--- Log Body Con-->
+                         <form>
+                                <div class="form-group">
+                                  <input type="email" class="form-control" id="adminEmail" aria-describedby="emailHelp" placeholder="Enter email">
+                                  <span id="adminEmailError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                  <input type="password" class="form-control" id="adminpassword" placeholder="Enter Password">
+                                  <span id="adminPasswordError"></span>
+                                </div>
+
+                                <div class="form-group">
+                                        <input type="password" class="form-control" id="adminSecurityCode" placeholder="Enter Security Code">
+                                        <span id="adminCodeError"></span>
+                                      </div>
+
+                                <button type="button" class="btn btn-warning btn-block" id="adminLogin_btn"> <i class="fas fa-sign-in-alt"></i> Log In</button>
+                                <p style="text-align:right ;" > New Admin <a href="http://localhost/shoppn/admin/pages/adminregister.html">Register</a></p>
+                                <span id="regErrorMessage"></span>
+                              </form>
+
+                    </div> <!--End of log Body -->
+                </div>
+            </div> <!-- End of Column -->
+        </div> <!-- End of Row -->
+    </div>
+    </div>
+
+             <!-- End of Main Body -->
+
+
+    <!-- Bootstrap & Jquery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Custom Js Script -->
+
+<!-- <script src="http://localhost/shoppn/js/validate.js"></script> -->
+<script src="http://localhost/shoppn/js/script.js"></script>
+
+</body>
+</html>

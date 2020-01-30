@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shoppn</title>
+     <!-- BootStrap Link -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <!-- Custom Stylesheet -->
+     <link rel="stylesheet" href="http://localhost/shoppn/css/style.css">
+     <!-- Fontawesome Link -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+</head>
+<body>
+    <!-- Nav Section -->
+    
+        <div class="row">
+            <div class="col-lg-12">
+                    <div id="top-nav">
+                            <ul class="nav justify-content-center">
+                               <li class="nav-item">
+                                 <a class="nav-link active" href="http://localhost/shoppn/page/userlogin.html" id="plogin_btn">Sign In</a>
+                               </li>
+                               <li class="nav-item">
+                                 <a class="nav-link" href="#">Store Locator</a>
+                               </li>
+                               <li class="nav-item">
+                                 <a class="nav-link" href="#">Contact Us</a>
+                               </li>
+                               <li class="nav-item">
+                                  <a class="nav-link btn btn-danger" id="userlogout_btn" style="margin-left: 0.5rem;"> Log out</a>
+                                </li>
+                             </ul>
+                       </div>
+
+            </div>
+        </div>
+ 
+    <!-- End of Nav Section -->
+
+     <!-- Header Section -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed" style="width: 100%;" id="main-head">
+            <a class="navbar-brand" id="company-logo" href="#" style="color: white;">Flames <span><i class="fas fa-fire-alt"></i></span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto">
+                <!-- Notifications Btn -->
+                    <li class="nav-item dropdown nav-off" id="nav-off">
+                        <a class="nav-link dropdown-toggle" href="#" id="notify-btn" style="font-size: 1.1rem;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-envelope"></i>  <sup><span class="badge badge-danger" id="badge-alert">2</span></sup> 
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="notify-btn">
+                          <a class="dropdown-item" href="#">User Updated Profile</a>
+                          <a class="dropdown-item" href="#">User Deleted item </a>
+                        </div>
+                      </li>
+
+                      <li class="nav-item dropdown nav-off" id="nav-off">
+                          <a class="nav-link dropdown-toggle btn" href="#" id="notify-btn" style="font-size: 1.1rem;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="fas fa-dollar-sign"></i>   <sup> <span class="badge badge-danger">1</span></sup> 
+                          </a>
+                          <div class="dropdown-menu" aria-labelledby="notify-btn">
+                            <a class="dropdown-item" href="#" >Transactions</a>
+                            <a class="dropdown-item" href="#">Purchase</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Orders</a>
+                            <a class="dropdown-item" href="#">Carts <i class="fas fa-cart-plus"></i> </a>
+                          </div>
+                        </li>
+                
+                <li class="nav-item dropdown nav-off" id="nav-off">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"  style="font-size: 1.1rem;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                  </a>
+                  <div class="dropdown-menu"  id="catnav" aria-labelledby="navbarDropdown">
+                   
+                  </div>
+                </li>
+
+                <form class="form-inline my-2 my-lg-0" method="POST">
+                    <input class="form-control mr-sm-2" type="search" id="searchInput" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-secondary my-2 my-sm-0" id="searchnav_btn" type="button">Search</button>
+                  </form>
+
+                <li class="nav-item dropdown" id="nav-off">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" style="font-size: 1.1rem;" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span id="userName">Account</span> <span id="userProfile"></span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Update</a>
+                      <a class="dropdown-item" href="#">Help</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Policy</a>
+                    </div>
+                  </li>
+              </ul>
+
+            </div>
+          </nav>
+          
+     <!-- End of Header Section  -->
+
+
+
+     <!-- Categories List Section -->
+     <div id="page-body">
+          <div id="categories">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-lg-12">
+                          <div id="category-nav">
+                                <ul class="nav justify-content-center">
+                                   <li class="nav-item">
+                                     <a class="nav-link active" href="#">Equipment</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link" href="#">Phones</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link" href="#">Grocery</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link " href="#"> Food</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link " href="#"> Sports Apparels</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link " href="#"> Decor</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link " href="#"> Wine & Beverages</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link " href="#"> Shoes</a>
+                                   </li>
+                                   <li class="nav-item">
+                                     <a class="nav-link " href="#"> Kids Toys</a>
+                                   </li>
+                                 </ul>
+                           </div>
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- End of Categories  List Section  -->
+
+          <hr>
+
+          <div id="display-message">
+              <div class="container">
+                    <div class="row col-lg-12 d-flex justify-content-center ">
+                            <div class="">
+                                 <h2>Welcome <span id="screenName"></span> <span id="userProfile"></span></h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                <div class="col-lg-12 d-flex justify-content-center ">
+                                     <h3 id="logmessage"><a href="http://localhost/shoppn/page/userlogin.html" id="sign_link">Login</a> for the best experience. Not a customer yet? <a href="http://localhost/shoppn/page/userregister.html" id="registration_link">Register</a></h3>
+                                </div>
+                            </div>
+              </div>
+          </div>
+
+
+          <!-- Product Slide -->
+          <div id="product-slide">
+                  <div class="row">
+                        <div class="bd-example">
+                                <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                                  <ol class="carousel-indicators">
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                                  </ol>
+                                  <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                      <img src="https://images.pexels.com/photos/1598505/pexels-photo-1598505.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <h5>a First slide label</h5>
+                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="https://images.pexels.com/photos/375897/pexels-photo-375897.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <h5>Second slide label</h5>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                                      </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                      <img src="https://images.pexels.com/photos/1038000/pexels-photo-1038000.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="d-block w-100" alt="...">
+                                      <div class="carousel-caption d-none d-md-block">
+                                        <h5>Third slide label</h5>
+                                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                  </a>
+                                  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                  </a>
+                                </div>
+                              </div>
+                  </div>
+          </div>
+                    <!-- End of Product Slide  -->
+
+        <!-- Health Tips  Display -->
+        <div id="display-message">
+                <div class="container">
+                      <div class="row col-lg-12 d-flex justify-content-center ">
+                              <div class="">
+                                   <h2>Healthy tips and Ideas</h2>
+                                   <p>ggf</p>
+                              </div>
+                          </div>
+                </div>
+            </div>
+
+
+        <div id="health-tips">
+            <!-- <div class="container"> -->
+                <div class="row">
+                    <div class="col-lg-3">
+                            <div class="card shadow-lg" style="width: 22rem;">
+                                    <img src="https://images.pexels.com/photos/533360/pexels-photo-533360.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h3 class="card-text">How to wash vegetables</h3>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                    </div>
+                    <div class="col-lg-3">
+                            <div class="card shadow-lg" style="width: 22rem;">
+                                    <img src="https://images.pexels.com/photos/1671218/pexels-photo-1671218.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                            <h3 class="card-text">Summer Goals. Are you in?</h3>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                    </div>
+                    <div class="col-lg-3">
+                            <div class="card shadow-lg" style="width: 22rem;">
+                                    <img src="https://images.pexels.com/photos/1615011/pexels-photo-1615011.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                            <h3 class="card-text">Staying Hydrated reduces Stress </h3>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                    </div>
+
+                    <div class="col-lg-3">
+                            <div class="card shadow-lg" style="width: 22rem;">
+                                    <img src="https://images.pexels.com/photos/209339/pexels-photo-209339.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                            <h3 class="card-text">How to identify GM foods</h3>
+                                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                  </div>
+                    </div>
+                <!-- </div> -->
+            </div>
+            <div id="display-message">
+                <div class="container">
+                      <div class="row col-lg-12 d-flex justify-content-center ">
+                              <div class="load-sec">
+                                   <a href="" class="btn btn-outline-warning m-block">load more</a>
+                              </div>
+                          </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Health Display -->
+
+
+        
+      </div>
+
+      <!-- Search Container -->
+    
+
+      <div class="row">
+
+        <!-- Category Bar -->
+        <div class="col-lg-3 col-md-4">
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div class="accordion" id="accordionExample">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+
+                <!-- Category Label -->
+                <h2 class="mb-0">
+                  <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#catmenu" aria-expanded="true" aria-controls="collapseOne">
+                    Categories
+                  </button>
+                </h2>
+
+
+              </div>
+              <div id="catmenu" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-9 col-md-8">
+          <!-- Products Display -->
+        <div id="display-message">
+            <div class="container">
+                  <div class="row  d-flex justify-content-center ">
+                          <div class="">
+                               <h2 style="text-align: center;">Products Available</h2>
+                               <p style="text-align: center;">Browse through variety of products , brands , categories</p>
+                          </div>
+                      </div>
+            </div>
+    </div>
+
+    <div id="prodDisplay">
+     <div class="row">
+
+     </div>
+    </div>
+        </div>
+        <!-- End of Product Display -->
+
+
+
+
+        <!-- Search Display -->
+        <div id="searchDisplay">
+            <div class="row">
+                <div class="col-lg-12 d-flex justify-content-end">
+                   <h1 id="closeSearch" ><i class="far fa-times-circle btn-lg" ></i></h1> 
+                  </div>
+              <div class="col-lg-12 d-flex justify-content-center">
+                <h1>Search Display</h1>
+              </div>
+            </div>
+    
+            
+              <div id="searchResult">
+                <div class="row">
+    
+                </div>
+              </div>
+          
+          </div>
+          <!-- End of search display -->
+
+
+    
+      </div>
+
+   <!-- Bootstrap & Jquery Script -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+   <!-- Custom Js Script -->
+   
+   <!-- <script src="http://localhost/shoppn/js/validate.js"></script> -->
+   <script src="http://localhost/shoppn/js/script.js"></script>
+</body>
+</html>

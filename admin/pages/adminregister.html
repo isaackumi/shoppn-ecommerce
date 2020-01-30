@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="http://localhost/shoppn/css/style.css">
+    <link rel="stylesheet" href="http://localhost/shoppn/css/register.css">
+    <!-- Fontawesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <title>Flames - Admin</title>
+</head>
+<body>
+<div class="register-bck">
+    <div class="register-box">
+        <div class="row">
+            <div class="col-lg-5 col-md-3">
+                <img src="https://images.pexels.com/photos/1364700/pexels-photo-1364700.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Registration Slide Image" style="width: 42rem; height: 38rem; margin-top:9rem;" class="img-thumbnail shadow-lg  rounded-circle">
+            </div>
+
+            <div class="col-lg-7 col-md-9">
+                <div class="rheader">    
+                <h1 id="company-logo">Flames<span><i class="fas fa-fire-alt"></i></span></h1>
+                 <p>Admin Registration</p>    
+                 <p id="security-message">It takes two to find a dozen keys <span><i class="fas fa-key"></i></span></p> 
+                </div>
+                <hr>
+
+                <div class="reg-body fixed">
+                        <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <input type="text" class="form-control" id="adminFirstname" placeholder="Enter Firstname">
+                                    <span id="adminFirstnameError"></span>
+                                  </div>
+
+                                  <div class="form-group col-md-6">
+                                   
+                                    <input type="text" class="form-control" id="adminSurname" placeholder="Enter Surname">
+                                    <span id="adminSurnameError"></span>
+                                  </div>
+                                </div>
+
+                                <div class="form-group">
+                                  <input type="text" class="form-control" id="adminEmail" placeholder="Enter email address">
+                                  <span id="adminEmailError"></span>
+                                </div>
+   
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    
+                                    <input type="number" class="form-control" id="adminAge" placeholder="Enter Age">
+                                    <span id="adminAgeError"></span>
+                                  </div>
+                                  <div class="form-group col-md-4">
+                                   
+                                    <select id="adminGender" class="form-control">
+                                      <option selected>---Gender---</option>
+                                      <option value="male">male</option>
+                                      <option value="female">female</option>
+                                      <option value="transgender">transgender</option>
+                                    </select>
+                                  </div>
+                                 
+                                </div>
+                                <div class="form-row">
+                                        <div class="form-group col-md-6">
+                                          <input type="password" class="form-control" id="adminPassword1" placeholder="Enter Password">
+                                          <span id="adminPasswordError"></span>
+                                        </div>
+                                        <div class="form-group col-md-6">
+                                                <input type="password" class="form-control" id="adminPassword2" placeholder="Re-enter Password">
+                                                <span id="adminPassword2Error"></span>
+                                              </div>
+                                      </div>
+                                      <div class="form-row">
+                                            <div class="form-group col-md-6">
+                                              <input type="password" class="form-control" id="adminCode" placeholder="Enter Security Code">
+                                              <span id="adminSecurityError"></span>
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <div class="input-group">
+                                                    <div class="input-group-prepend">
+                                                      <span class="input-group-text " id="adminProfile">Profile Image</span>
+                                                    </div>
+                                                    <div class="custom-file">
+                                                      <input type="file" class="custom-file-input" id="adminProfile"
+                                                        aria-describedby="inputGroupFileAddon01">
+                                                      <label class="custom-file-label" for="adminProfile">Choose file</label>
+                                                    </div>
+                                                  </div>
+                                                <span id="adminSecurityError"></span>
+                                              </div>
+                                          </div>
+                                
+                                <button type="button" class="btn btn-warning btn-block" id="adminReg_btn"> <i class="fas fa-sign-in-alt"></i> Register</button>
+                                <p style="text-align:right ;" > Already an  Admin <a href="http://localhost/shoppn/admin/pages/adminlog.html">Login</a></p>
+
+                                <div id="admin-options">
+                                    <p>Other options</p>
+                                    <hr>
+                                        <div class="row d-flex justify-content-center">
+                                                <div class="col-lg-12">
+                                                        <a href="http://localhost/shoppn/page/userlogin.html" class="btn btn-outline-danger">User Portal</a>
+                                                        <a href="http://localhost/shoppn/page/landingPage.html" class="btn btn-outline-warning">Move to Site</a></p>
+                                                </div>
+                                            </div>
+                                </div>
+                               
+                                <span id="regErrorMessage"></span>
+                              </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap & Jquery Script -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!-- Custom Js Script -->
+
+<!-- <script src="http://localhost/shoppn/js/validate.js"></script> -->
+<script src="http://localhost/shoppn/js/script.js"></script>
+    
+</body>
+</html>

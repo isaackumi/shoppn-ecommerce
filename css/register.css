@@ -1,0 +1,25 @@
+.rheader{
+    text-align: center;
+    margin-top: 7rem;
+}
+
+
+.reg-body p{
+    margin-top: 2%;
+    font-size: 0.85rem;
+    
+}
+
+.reg-body{
+    margin-top:2rem;
+}
+
+#security-message{
+    font-size: 0.3rem;
+    font-weight: bold;
+}
+
+#rscreen-message{
+    font-size: 0.3rem;
+    font-weight: bold;
+}
